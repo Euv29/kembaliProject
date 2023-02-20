@@ -1,0 +1,156 @@
+.composition-area{
+     padding: 1rem 1rem 1rem 1rem;
+     width: 100%;
+     height: 100%;
+}
+
+.composition-box{
+     height: 24rem;
+     margin: 0rem 1rem;
+}
+
+.composition-box textarea{
+     color: #000;
+     background-color: var(--background-color);
+     width: 100%;
+     height: 100%;
+     border: 1px var(--background-color);
+     outline: none;
+}
+
+.composition-area section{
+     margin-top: 2rem;
+}
+
+.AddImg{
+     min-height: 2vh;
+     font-size: 12pt;
+     margin: 0rem 1rem;  
+}
+
+.AddImg-text{
+     margin-right: 0.5rem;
+}
+
+/*Upload Image Configuration*/
+.imgArea{
+     visibility: hidden;
+     margin: 2rem;
+}
+
+#image{
+     display: none;
+}
+
+#img-icon{
+     font-size: 2rem;
+}
+
+.upload-img{
+     margin-top: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     outline: none;
+     height: 100px;
+     width: 100px;
+     color: #aaa;
+     background-color: #e6e6e6;
+     border: 2px dashed #aaa;
+}
+
+.upload-img:hover{
+     background-color: #aaaaaa83;
+     border: 2px dashed var(--primary-color);
+     color: var(--primary-color);
+}
+
+.upload-img:active{
+     background-color: var(--primary-color);
+     border-color: #fff;
+     color: #fff;
+}
+
+.imgzone--image{
+     width: 9.9rem;
+     height: 9.9rem;
+}
+
+#imgzone-image{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 2.7rem;
+}
+
+/*Submit Ask button*/
+
+.btn.post-me{
+     background-color: var(--primary-color);
+     height: 40px;
+     width: 200px;
+     border: 1px #fff solid;
+     border-radius: 10px;
+     color: #fff;
+     font-size: 1rem;
+     font-weight: bold;
+}
+
+/* #################################### */
+/* Detalhes / postar */
+
+.postar {
+     height: 60vh;
+}
+
+.subject, .subject label{
+     margin-bottom: 1.5rem;
+}
+
+.subject input{
+     border-radius: 50px;
+     height: 3rem;
+     width: 100%;
+     padding: 0rem 2rem 0rem 2rem;
+     border: 1px var(--background-color);
+     outline: none;
+}
+
+.postar section{
+     margin-top: 1rem;
+}
+
+.List-Elemente{
+     background-color: var(--primary-color);
+     margin: 1rem;
+     height: 3.5rem;
+     width: 9rem;
+     padding: 1rem;
+     border-radius: 50px;
+     text-align: center;
+}
+
+.List-Elemente:hover{
+     background-color: #aaaaaa83;
+     color: #fff;
+}
+
+.List-Elemente:active{
+     background-color: var(--primary-color);
+     border-color: #fff;
+     color: #fff;
+}
+
+.option{
+     font-weight: bold;
+     color: #fff;
+}
+
+.option input{
+     display: none;
+}
+
+.postar-btn{
+     padding-top: 30%;
+}

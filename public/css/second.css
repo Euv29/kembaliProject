@@ -1,0 +1,113 @@
+/*Header*/
+.header-container{
+    background: rgb(255,138,0);
+    background: linear-gradient(45deg, rgba(255,138,0,1) 62%, rgba(255,166,0,1) 100%);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.header-nav{
+    width: 100%;
+    height: 100%;
+}
+
+.header-list{
+    width: 80%;
+    height: 100%;
+}
+
+.list-element:first-child{
+    width: 7%;
+}
+
+.notification-card-container{
+    background-color: var(--third-color);
+    border-bottom: thin solid;
+    overflow: hidden;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: justify;
+}
+
+.notification-card{
+    width: 80%;
+}
+
+.post-area{
+    margin-top: 3rem;
+    padding: 2rem;
+    width: 90%;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 2rem;
+    border: solid thin black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#postInfo{
+    margin-bottom: 0.5rem;
+}
+
+.content{
+    text-align: justify;
+}
+
+#text{
+    margin-bottom: 0.5rem;
+}
+
+#tagName{
+    margin: 0.5rem 0 1rem 0;
+}
+
+#post-img-area{
+    width: 100%;
+    overflow: hidden;
+}
+
+#post-img{
+    width: 30rem;
+    height: 25rem ;
+}
+
+.comments-area{
+    margin-top: 6rem;
+}
+
+.create-comment{
+    position: fixed;
+    bottom: 0;
+    padding: 2rem;
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px -1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#create-comment-textarea{
+    outline: none;
+    border-style: hidden;
+    height: 90%;
+    width: 95%;
+    margin: 0 2rem;
+}
+
+#create-comment-textarea::placeholder{
+    color: black;
+}
+
+.comment-button{
+    margin-right: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#send-comment{
+    font-size: var(--header-icon-size);
+}
+

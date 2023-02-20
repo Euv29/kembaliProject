@@ -1,0 +1,84 @@
+/* DADOS DO USER */
+.data-profile{
+     display: flex;
+     width: 100%;
+     box-shadow: #0000001a 0px 1px 20px 1px;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+}
+
+.profile-img{
+     margin-top: 2rem;
+     border-radius: 50%;
+     height: 10rem;
+     width: 10rem;     
+    overflow: hidden;
+}
+
+.profile-img img{
+     width: 100%;
+}
+
+.username{
+     margin-top: 1.5rem;
+     font-size: large;
+     font-weight: bold;
+}
+
+.favorite-tags{
+     margin-top: 1.5rem;
+     margin-bottom: 1.5rem;
+}
+
+.favorite-taglist{
+     text-align: center;
+     height: 15px;
+}
+
+
+.favorite-taglist a{
+     color: #fff;
+     padding: 2px;
+}
+
+.list-element{
+     background-color: var(--primary-color);
+     margin-left: 5px;
+     border-radius: 20px;
+     height: 20px;     
+     transition: .5s ease-in-out;
+}
+
+.list-element:hover{
+     color: var(--primary-color);
+     background-color: #e7e7e7;
+}
+
+.contagem{
+     width: 100%;
+     margin-bottom: 1.5rem;
+}
+
+.contagem section div{
+     margin: 5px;
+}
+
+.count-box{
+     background-color: #2d2d2d;
+     color: white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-weight: bolder;
+     border-radius: 2px;
+     height: 30px;
+     width: 100%;
+     transition: .5s ease-in-out;
+}
+
+.count-box:hover{
+     background-color: #ff8800;
+     color: #2d2d2d;
+     height: 30px;
+     width: 100%;
+}

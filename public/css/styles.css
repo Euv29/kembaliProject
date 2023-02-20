@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+/*Header*/
+.header-container{
+    background: linear-gradient(45deg, rgba(255,138,0,1) 62%, rgba(255,166,0,1) 100%);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.header-nav, .header-list{
+    width:100%;
+    height:100%;
+}
+
+.header-text{
+    font-size: 1.5rem;
+    font-weight: var(--semi-bold);
+    color: var(--icons-color);
+}
+
+    /*Profile*/
+.profile-pic-area{
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    overflow: hidden;
+}
+
+#profile-pic{
+    width: 100%;
+}
+    /*endProfile*/
+/*endHeader*/
+
+/*Main*/
+
+.main-container{
+    margin: 10vh 0;
+    height: 100%;
+}
+
+/*Create Post*/
+.create-post-conteiner{
+    border-radius: 2rem;
+    border: thin solid;
+    background-color: var(--third-color);
+    margin: 2rem 0 1rem 0;
+    padding: 1.5rem 0;
+    height: 2rem;
+    width: 80%;
+}
+
+.dashboard-posts{
+    margin-top: 3rem;
+}
+
+.create-post-area{
+    width: 95%;
+}
+
+.create-post{
+    width: 90%;
+}
+
+#ask{
+    width: 90%;
+    height: 80%;
+    outline: none;
+    border:none; 
+}
+
+#ask::placeholder{
+    color: var(--link-color);
+}
+
+/*Posts*/
+.post-card{
+    width: 80%;
+    min-width: 30rem;
+    min-height: 10rem;
+    border: thin solid;
+    border-radius: 2rem;
+    margin: 1rem;
+    overflow: hidden;
+    background-color: var(--third-color);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/*Post header*/
+.post-header{
+    width: 80%;
+    height: 4vh;
+}
+
+.user-id{
+    width: 45%;
+}
+
+/*Post body*/
+.post-body{
+    text-align: justify;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+#ask{
+    color: var(--link-color);
+}
+
+/*Post footer*/
+.post-footer{
+    width: 80%;
+    margin-bottom: 0.3rem;
+}
+
+/*Search*/
+.search-area{
+    background-color: var(--icons-color);
+    padding: 0 1rem;
+    border: solid;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+    margin-top: 7rem;
+}
+
+#search{
+    border: none;
+    outline: none;
+    width: 94%;
+}
+
+/*Footer*/
+.footer-container{
+    background: #ffffff;
+    height: 8vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px -1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.footer-nav, .footer-list{
+    width:100%;
+    height:100%;
+} 
+
