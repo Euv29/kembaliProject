@@ -9,5 +9,8 @@ use Illuminate\Http\Response;
 
 class ComentarioController extends Controller
 {
-    
+    public function store()
+    {
+        
+    }
 }

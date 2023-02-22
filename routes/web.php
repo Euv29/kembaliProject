@@ -49,10 +49,10 @@ Route::get('/perfil/{id}/{name}', [PerguntaController::class, 'perfil'])
     ->middleware(['auth']);
 
 /* Comentário */
-Route::get('/comentarios', [ComentarioController::class, 'index']);
+Route::post('/comentarios', [ComentarioController::class, 'store']);
 
 /* Disciplina */
-Route::get('/criar/disciplina', [DisciplinaController::class, 'create'])
+Route::get('/criar/disciplina', [DisciplinaController::class, 'creaste'])
     ->name('create.disciplina')
     ->middleware(['auth']);
 

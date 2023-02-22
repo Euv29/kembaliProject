@@ -54,6 +54,5 @@ class PerguntaController extends Controller
         $perguntas = $usuario->perguntas;
 
         return view('pergunta.profile', ['perguntas' => $perguntas, 'usuario' => $usuario]);
-        
     }
 }
