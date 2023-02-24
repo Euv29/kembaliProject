@@ -53,6 +53,11 @@ class PerguntaController extends Controller
         $usuario = user::findOrFail($id);
         $perguntas = $usuario->perguntas;
 
+        if (auth()->user()->id == $id) {
+
+            return redirect(route('dashboard'))->with('perguntas', $perguntas)->with('usuario', $usuario);
+        }
+
         return view('pergunta.profile', ['perguntas' => $perguntas, 'usuario' => $usuario]);
     }
 }

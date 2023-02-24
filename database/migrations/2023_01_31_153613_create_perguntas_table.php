@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('perguntas', function (Blueprint $table) {
-            $table->increments('id');
+            $table->id();
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade')->onUpdate('cascade');
             $table->string('pergunta',255);
             $table->string('imagem');

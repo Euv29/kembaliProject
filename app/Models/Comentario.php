@@ -8,4 +8,18 @@ use Illuminate\Database\Eloquent\Model;
 class Comentario extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'comment'
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function pergunta()
+    {
+        return $this->belongsTo(Pergunta::class);
+    }
 }

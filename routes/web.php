@@ -20,7 +20,6 @@ use App\Http\Controllers\{
 */
 
 /* User */
-
 Route::middleware('auth')->group(function () {
     Route::get('/perfil/editar', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -29,7 +28,8 @@ Route::middleware('auth')->group(function () {
 
 /* Pergunta */
 Route::get('/', [PerguntaController::class, 'index'])
-    ->name('index.pergunta');
+    ->name('index.pergunta')
+    ->middleware(['auth']);
 
 Route::get('/perguntas/criar', [PerguntaController::class, 'create'])
     ->name('create.pergunta')
@@ -49,7 +49,7 @@ Route::get('/perfil/{id}/{name}', [PerguntaController::class, 'perfil'])
     ->middleware(['auth']);
 
 /* Comentário */
-Route::post('/comentarios', [ComentarioController::class, 'store']);
+Route::post('/comentarios/pergunta={id}', [ComentarioController::class, 'store']);
 
 /* Disciplina */
 Route::get('/criar/disciplina', [DisciplinaController::class, 'creaste'])
