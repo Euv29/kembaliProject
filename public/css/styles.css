@@ -81,8 +81,7 @@
 
 /*Posts*/
 .post-card {
-    width: 80%;
-    min-width: 30rem;
+    width: 33rem;
     min-height: 10rem;
     border: thin solid;
     border-radius: 2rem;
@@ -109,9 +108,19 @@
     margin-bottom: 1rem;
 }
 
-#ask {
+#ask{ 
+    /* Limitar o texto e colocar os 3 pontinhos */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+#ask, .ask {
     color: var(--link-color);
 }
+
 
 /*Post footer*/
 .post-footer {

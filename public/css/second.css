@@ -41,6 +41,7 @@
     margin-top: 3rem;
     padding: 2rem;
     width: 90%;
+    max-height: 40rem;
     overflow: hidden;
     background-color: white;
     border-radius: 2rem;
@@ -58,6 +59,10 @@
 
 #text{
     margin-bottom: 0.5rem;
+}
+
+.post-image-area{
+    
 }
 
 #tagName{

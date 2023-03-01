@@ -1,4 +1,5 @@
 <x-layouts.main title="Home">
+
     @foreach ($perguntas as $pergunta)
         <section class="posts-area flex col align-center">
             <section class="post-card flex col align-center justify-center">
@@ -24,4 +25,5 @@
                 </section>
             </section>
     @endforeach
+    
 </x-layouts.main>

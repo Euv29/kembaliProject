@@ -23,7 +23,7 @@ return new class extends Migration {
                 ->cascadeOnDelete()
                 ->cascadeOnUpdate();
                 
-            $table->string('mensagem');
+            $table->longText('mensagem');
             $table->timestamps();
         });
     }

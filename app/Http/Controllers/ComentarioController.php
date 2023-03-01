@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ComentarioStoreRequest;
 use App\Models\Comentario;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
 class ComentarioController extends Controller
@@ -15,7 +15,7 @@ class ComentarioController extends Controller
         return view();
     }
 
-    public function store(Request $request, $id)
+    public function store(ComentarioStoreRequest $request, $id)
     {
         $comentarios = new Comentario;
         $usuario = auth()->user();

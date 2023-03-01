@@ -66,6 +66,16 @@ textarea{
     resize: none;
 }
 
+.alert{
+    margin: 1rem 0 0.5rem 0;
+    padding: 3rem;
+    text-align: center;
+    background-color: red;
+    color: white;
+    font-size: var(--normal-text);
+    width: 100%;
+}
+
 /*Flex-Box*/
 .flex{
     display: flex;

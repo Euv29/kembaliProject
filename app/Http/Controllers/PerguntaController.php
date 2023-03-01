@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Http\Requests\PerguntaStoreRequest;
 use App\Models\{
     Pergunta,
     User
@@ -21,14 +21,24 @@ class PerguntaController extends Controller
         return view('pergunta.create');
     }
 
-    public function store(Request $request)
+    public function store(PerguntaStoreRequest $request)
     {
         $perguntas = new Pergunta;
         $usuario = auth()->user();
 
-        $perguntas->pergunta = $request->pergunta;
-        $perguntas->imagem = 'Sem imagem';
+        if ($request->hasFile('image')) {
+
+            $imagem = $request->file('image');
+            $extensao = $imagem->extension();
+            $nome_imagem = md5($imagem->getClientOriginalName() . strtotime("now")) . "." . $extensao;
+            $imagem->move(public_path('img/perguntas'), $nome_imagem);
+
+            $perguntas->imagem = $nome_imagem;
+        }
+
+
         $perguntas->user_id = $usuario->id;
+        $perguntas->pergunta = $request->pergunta;
         $perguntas->save();
 
         return redirect(route('index.pergunta'))->with('msg', 'Pergunta Enviada com Sucesso');
